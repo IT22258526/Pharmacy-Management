@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+body{
+    font-family: "Sora", sans-serif;
+}
+
+.item-button button{
+  margin-top: 25px;
+  width: 130px;
+  background-color: rgb(53, 117, 190);
+  color: aliceblue;
+}
+
+
+
+.category{
+  border: 3px solid  rgb(170, 211, 243);
+  margin-right: 20px;
+  margin-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 3px;
+  border-radius: 30%;
+  width: 90px;
+  height: 40px;
+  
+
+}
+.category-active{
+  border: 2px solid rgb(165, 208, 238);
+  background-color: rgb(149, 201, 234);
+  
+}
