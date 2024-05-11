@@ -5,7 +5,7 @@ import { EyeOutlined } from "@ant-design/icons";
 import { Modal, Button, Table } from "antd";
 import { useReactToPrint } from "react-to-print";
 import jsPDF from "jspdf";
-import "jspdf-autotable"; // Import jspdf-autotable
+import "jspdf-autotable"; 
 
 const BillsPage = () => {
   const componentRef = useRef();
@@ -31,10 +31,14 @@ const BillsPage = () => {
     getAllBills();
   }, []);
 
+
+  //print
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
 
+
+  //report
   const generatePDF = () => {
     const doc = new jsPDF();
     const tableData = billsData.map((bill) => [bill.invoiceNumber, bill.date, bill.totalAmount, bill.tax]);
