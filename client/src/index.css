@@ -33,3 +33,45 @@ body{
   background-color: rgb(149, 201, 234);
   
 }
+
+
+
+.register{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+
+}
+
+.register input{
+  width: 400px;
+}
+
+.register form{
+  background-color:rgb(122, 199, 235);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.login{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+
+}
+
+.login input{
+  width: 400px;
+}
+
+.login form{
+  background-color:rgb(88, 194, 233);
+  padding: 12px;
+  border-radius: 10px;
+}

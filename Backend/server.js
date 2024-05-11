@@ -27,7 +27,7 @@ app.use(morgan('dev'));
 
 app.use("/api/items",require("./routes/itemRoutes"));
 app.use("/api/bills",require("./routes/billsRoutes"));
-
+app.use("/api/users",require("./routes/userRoutes"));
 
 const PORT = 3001;
 //const PORT = process.env.PORT || 3001;
