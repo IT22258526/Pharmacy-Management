@@ -7,7 +7,8 @@ import {
   MediumOutlined,
   ShoppingCartOutlined,
   SnippetsOutlined,
-  LogoutOutlined
+  LogoutOutlined,
+  UserOutlined
 } from '@ant-design/icons';
 
 import "../styles/DefaultLayout.css";
@@ -41,8 +42,11 @@ const App = ({ children }) => {
           defaultSelectedKeys={window.location.pathname}
           style={{ padding: '16px 0', background: '#023E8A' }}
         >
+          <Menu.Item key="/dashboard" icon={<HomeOutlined />}>
+            <Link to="/dashboard">Dashboard</Link>
+          </Menu.Item>
 
-          <Menu.Item key="/" icon={<HomeOutlined />}>
+          <Menu.Item key="/" icon={<UserOutlined  />}>
             <Link to="/">Home</Link>
           </Menu.Item>
           <Menu.Item key="/items" icon={<MediumOutlined />}>
