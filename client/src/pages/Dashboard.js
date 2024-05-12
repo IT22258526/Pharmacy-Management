@@ -37,11 +37,12 @@ const Dashboard = () => {
             flex: 1,
             minWidth: 0,
             background: '#198ab2',
-            padding:0,
-            borderRadius: borderRadiusLG,
+            borderRadius: 100,
             color: '#0000',
             fontSize: '13px',
             fontWeight: 'bold',
+            
+            paddingLeft: '50px',
         
            
             
@@ -89,12 +90,18 @@ const Dashboard = () => {
       <Footer
         style={{
           textAlign: 'center',
+          backgroundColor: '#001529',
+          color: '#ffffff',
+          fontSize:'50px',
+          fontStyle:'italic',
         }}
       >
 
-        <h1>
-            IVORY Dental Clinic
-        </h1>
+        <b>
+              IVORY Dental Clinic
+        </b>
+          
+        
       </Footer>
     </Layout>
   );
