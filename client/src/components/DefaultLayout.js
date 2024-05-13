@@ -63,7 +63,7 @@ const App = ({ children }) => {
             icon={<LogoutOutlined />}
             onClick={() => {
               localStorage.removeItem('auth');
-              navigate('/login'); // Redirect to login page upon logout
+              navigate('/dashboard'); 
             }}
           >
             Logout
