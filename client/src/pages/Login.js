@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Form, Input, Button, message } from "antd"; 
+import { Form, Input, Button, message } from "antd";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,9 +8,9 @@ const Login = () => {
 
     const handleSubmit = async (values) => {
         try {
-            const res = await axios.post('/api/users/login', values); 
-            if(res.status === 200) { 
-                message.success('User login Successfully');
+            const res = await axios.post('/api/users/login', values);
+            if (res.status === 200) {
+                message.success('User login successfully');
                 localStorage.setItem('auth', JSON.stringify(res.data));
                 navigate('/');
             } else {
@@ -22,23 +22,11 @@ const Login = () => {
         }
     };
 
-
-    useEffect(()=>{
-
-        if(localStorage.getItem('auth')){
-            localStorage.getItem('auth');
-            navigate('/')
+    useEffect(() => {
+        if (localStorage.getItem('auth')) {
+            navigate('/');
         }
-            
-        
-    },[navigate]);
-
-
-
-
-
-
-
+    }, [navigate]);
 
     return (
         <div className="login" style={{ backgroundImage: 'url("https://t4.ftcdn.net/jpg/06/84/15/61/360_F_684156133_Ul66qNO45QevDrQ3d6H97WrgiZtZt2L9.jpg")', backgroundSize: 'cover' }}>
@@ -50,9 +38,9 @@ const Login = () => {
                     onFinish={handleSubmit}
                 >
                     <Form.Item
-                        name="userID"
+                        name="userId" 
                         label="User ID"
-                        rules={[{ required: true, message: 'Please enter the userID' }]}
+                        rules={[{ required: true, message: 'Please enter the user ID' }]}
                     >
                         <Input />
                     </Form.Item>
