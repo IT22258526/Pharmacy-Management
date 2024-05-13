@@ -50,7 +50,7 @@ const Register = () => {
         <Input />
     </Form.Item>
     <Form.Item
-        name="userId"  // Ensure this field is present
+        name="userId"  
         label="User ID"
         rules={[{ required: true, message: 'Please enter the userID' }]}
     >
